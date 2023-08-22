@@ -15,4 +15,8 @@
 .maincontainer main {
     flex-grow: 1;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
