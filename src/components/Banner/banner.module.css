@@ -1,0 +1,41 @@
+.banner {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-image: url("https://www.lighthouselabs.ca/uploads/post/open_graph_image/459/Coding-vs-programming.jpg");
+  background-position: 50%;
+}
+
+.banner img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.bannerInfo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(130, 130, 130, 0.25);
+  justify-content: space-evenly;
+  padding: 1rem;
+  font-size: 2rem;
+  align-self: stretch;
+}
+
+.bannerName,
+.bannerLabor {
+  text-transform: uppercase;
+}
+
+.bannerName {
+  font-weight: 900;
+}
+
+.bannerLabor {
+  font-weight: 450;
+}
