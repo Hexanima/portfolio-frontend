@@ -1,0 +1,18 @@
+import styles from "./banner.module.scss";
+
+function Banner() {
+  return (
+    <div className={styles.Banner}>
+      <div className={styles.Background} style={{backgroundImage: "url(/img/CodeImage.jpg)"}}></div>
+      <div className={styles.Info}>
+        <img src="/img/Profile Picture.jpeg" alt="" />
+        <div className={styles.Data}>
+          <h1>NICOLAS FILIPPELLI</h1>
+          <h2>FULLSTACK DEVELOPER</h2>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Banner;
