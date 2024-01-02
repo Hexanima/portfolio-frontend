@@ -14,7 +14,9 @@
 #### Acerca de:
 
 - Debe contar con distintos párrafos
-- Educación y experiencia laboral / académica:
+
+### Educación y experiencia laboral / académica:
+
 - Debe mostrar el nombre
 - Debe mostrar fechas de inicio / finalización
 - Debe tener una descripción de la experiencia / estudio

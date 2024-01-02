@@ -1,0 +1,14 @@
+.Container {
+  padding: 1rem;
+  background-color: rgba($color: #fff, $alpha: 0.1);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+
+  .Title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
