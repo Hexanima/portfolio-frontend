@@ -1,7 +1,11 @@
 import { ReactNode } from "react";
 import styles from "./container.module.scss";
 
-function Container({ children }: { children: ReactNode }) {
+interface ContainerParams {
+  children: ReactNode;
+}
+
+function Container({ children }: ContainerParams) {
   return <div className={styles.Container}>{children}</div>;
 }
 
