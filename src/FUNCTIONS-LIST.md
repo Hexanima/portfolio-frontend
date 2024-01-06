@@ -15,7 +15,7 @@
 
 - Debe contar con distintos párrafos
 
-### Educación y experiencia laboral / académica:
+#### Educación y experiencia laboral / académica:
 
 - Debe mostrar el nombre
 - Debe mostrar fechas de inicio / finalización
@@ -95,3 +95,5 @@ Esta seccion debera conectarse a un backend y habilitar edición
 - Deben poder cambiarse el orden de los enlaces
 
 ## Backend
+
+Aqui se documentaran los endpoints de la API asi como sus funciones en si
