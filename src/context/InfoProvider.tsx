@@ -2,6 +2,7 @@ import { createContext, ReactNode } from "react";
 
 interface InfoContextValues {
   experienceList: ListInfo[];
+  languageList: LanguageItem[];
 }
 
 export const InfoContext = createContext({} as InfoContextValues);
@@ -36,7 +37,13 @@ export function InfoProvider({ children }: { children: ReactNode }) {
       ],
     },
   ];
-  const contextValues = { experienceList };
+
+  const languageList: LanguageItem[] = [
+    { title: "Ingles", grade: "C2", certificate: "http://www.google.com" },
+    { title: "Ingles", grade: "C2", certificate: "http://www.google.com" },
+    { title: "Ingles", grade: "C2", certificate: "http://www.google.com" },
+  ];
+  const contextValues = { experienceList, languageList };
 
   return (
     <InfoContext.Provider value={contextValues}>

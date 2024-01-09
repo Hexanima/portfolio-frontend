@@ -19,8 +19,7 @@ function About() {
       <About.Parraph>
         Completé el curso Fullstack Developer de Digital House, donde diseñamos
         y desarrollamos varias páginas y realizamos un proyecto de e-commerce,
-        utilizando diversas tecnologías, principalmente ExpressJs, EJS, MySql y
-        ORM Sequelize y ReactJs. Te invito a ver el repositorio de{" "}
+        utilizando el stack MERN. Te invito a ver el repositorio de{" "}
         <a
           href="https://github.com/RamonBritez/Grupo_5_Animal_Park"
           target="_blank"

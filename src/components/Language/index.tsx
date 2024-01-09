@@ -1,39 +1,35 @@
 import Container from "../Container";
 import styles from "./language.module.scss";
 
-function Language() {
+interface LanguageProps {
+  list: LanguageItem[];
+}
+
+function Language({ list }: LanguageProps) {
   return (
     <Container>
-      <Container.Title text="Idioma" />
+      <Container.Title text="Idiomas" />
       <ul className={styles.Language}>
-        <li>
-          <h3>Ingles</h3>
-          <h4>Grado C2</h4>
-          <a href="">Certificado</a>
-        </li>
-        <li>
-          <h3>Ingles</h3>
-          <h4>Grado C2</h4>
-          <a href="">Certificado</a>
-        </li>
-        <li>
-          <h3>Ingles</h3>
-          <h4>Grado C2</h4>
-          <a href="">Certificado</a>
-        </li>
-        <li>
-          <h3>Ingles</h3>
-          <h4>Grado C2</h4>
-          <a href="">Certificado</a>
-        </li>
-        <li>
-          <h3>Ingles</h3>
-          <h4>Grado C2</h4>
-          <a href="">Certificado</a>
-        </li>
+        {list.map((item) => (
+          <Language.Item item={item} key={`${item.title}.${item.grade}`} />
+        ))}
       </ul>
     </Container>
   );
 }
+
+Language.Item = function ({ item }: { item: LanguageItem }) {
+  return (
+    <li>
+      <h3>{item.title}</h3>
+      <h4>Grado {item.grade}</h4>
+      {item.certificate && (
+        <a href={item.certificate} target="_blank">
+          Certificado
+        </a>
+      )}
+    </li>
+  );
+};
 
 export default Language;

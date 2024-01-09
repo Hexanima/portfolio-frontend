@@ -48,10 +48,6 @@
       flex-direction: column;
       justify-content: space-evenly;
       gap: 0.5rem;
-
-      @media (min-width: 768px) {
-        gap: 0;
-      }
     }
   }
 }
