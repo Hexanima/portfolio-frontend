@@ -1,5 +1,6 @@
 import About from "../../components/About";
 import Banner from "../../components/Banner";
+import Contact from "../../components/Contact";
 import Language from "../../components/Language";
 import List from "../../components/List";
 import Projects from "../../components/Projects";
@@ -18,6 +19,7 @@ function Home() {
         <List title="Educación" items={experienceList} />
         <Language list={languageList} />
         <Projects />
+        <Contact />
       </div>
     </div>
   );

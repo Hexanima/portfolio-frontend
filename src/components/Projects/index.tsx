@@ -1,5 +1,7 @@
 import Container from "../Container";
 import styles from "./project.module.scss";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PublicIcon from "@mui/icons-material/Public";
 
 function Projects() {
   return (
@@ -30,8 +32,12 @@ Projects.Item = function () {
           "Slay The Spire" en una aplicacion de consola.
         </p>
         <div className={styles.Links}>
-          <a href="#">GitHub</a>
-          <a href="#">Version en vivo</a>
+          <a href="#">
+            <GitHubIcon />GitHub
+          </a>
+          <a href="#">
+            <PublicIcon />Version en vivo
+          </a>
         </div>
       </div>
     </li>

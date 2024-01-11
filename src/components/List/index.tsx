@@ -28,8 +28,8 @@ List.Item = function ({ item }: { item: ListInfo }) {
         <p>{item.date}</p>
       </div>
       <div className={styles.Info}>
-        {item.description.map((desc) => (
-          <p>{desc}</p>
+        {item.description.map((desc, i) => (
+          <p key={`${desc[0]}.${i}`}>{desc}</p>
         ))}
       </div>
     </li>
