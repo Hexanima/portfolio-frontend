@@ -34,10 +34,10 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    backdrop-filter: blur(0.25rem);
-    background-color: rgba($color: #fff, $alpha: 0.1);
+    backdrop-filter: blur(0.5rem);
+    background-color: rgba($color: variables.$text, $alpha: 0.1);
     border-radius: 1rem;
-    
+
     @media (min-width: 768px) {
       flex-direction: row;
     }
