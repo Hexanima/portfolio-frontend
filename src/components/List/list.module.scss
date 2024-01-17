@@ -1,53 +1,92 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
 .List {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   gap: 1.5rem;
   width: 100%;
-  
+
   @media (min-width: 768px) {
-    gap: 0.75rem;
+    gap: 1rem;
   }
 
   li {
-    border: 1px solid white;
     border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
+    transition: variables.$transitionSpeed box-shadow ease;
+
+    display: grid;
+    gap: 0.5rem;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
 
     @media (min-width: 768px) {
-      flex-direction: row;
-      gap: 1rem;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0.5rem 0.25rem variables.$lightcyan;
     }
 
     div {
-      padding: 0.75rem;
+      padding: 1rem;
+      background-color: variables.$cyan;
     }
 
     .Date {
-      border-bottom: 1px solid white;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
+      text-align: center;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
 
       @media (min-width: 768px) {
-        width: 25%;
-        border-right: 1px solid white;
-        border-bottom: 0;
+        border-bottom-left-radius: 0.5rem;
+        border-top-right-radius: 0;
       }
-      
+
+      font-family: variables.$monoFont;
+
+      h3 {
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+      }
+
       h4 {
         font-weight: normal;
       }
     }
 
     .Info {
-      flex-grow: 1;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-evenly;
-      gap: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+      }
+
+      .Description {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0.5rem;
+      }
+
+      a {
+        @include mixins.button();
+      }
     }
   }
 }

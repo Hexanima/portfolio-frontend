@@ -1,6 +1,8 @@
+@use "../../styles/variables";
+
 .Container {
   padding: 1rem;
-  background-color: rgba($color: #fff, $alpha: 0.1);
+  background-color: variables.$blue;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -8,7 +10,10 @@
   gap: 0.5rem;
 
   .Title {
+    font-family: variables.$monoFont;
+    text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
   }
 }

@@ -1,0 +1,120 @@
+@use "../../../styles/variables";
+@use "sass:color";
+
+$tempColor: color.mix(
+  $color1: variables.$darkblue,
+  $color2: variables.$blue,
+  $weight: 50%,
+);
+
+.Header {
+  padding: 1.5rem 2rem;
+  background-color: $tempColor;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  .Desktop {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .Links {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: variables.$monoFont;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+
+      a {
+        color: variables.$text;
+        transition: variables.$transitionSpeed all ease;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      a:hover {
+        text-shadow: variables.$text 0 0 0.5rem;
+        letter-spacing: 0.25rem;
+      }
+    }
+  }
+
+  .Mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.Active {
+      background-color: $tempColor;
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    .Button {
+      color: variables.$text;
+      transition: variables.$transitionSpeed all ease;
+      cursor: pointer;
+      top: 1.5rem;
+      left: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      z-index: 10;
+
+      &:hover {
+        filter: drop-shadow(0 0 0.5rem variables.$text);
+      }
+    }
+  }
+}
+
+.Burger {
+  background-color: $tempColor;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: variables.$monoFont;
+  font-size: 1rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  transition: variables.$transitionSpeed all ease;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 200;
+  height: 100vh;
+  position: fixed;
+
+  &.Active {
+    display: flex;
+  }
+
+  a {
+    color: variables.$text;
+    transition: variables.$transitionSpeed all ease;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-shadow: variables.$text 0 0 0.5rem;
+    letter-spacing: 0.25rem;
+  }
+}

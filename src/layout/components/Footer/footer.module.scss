@@ -1,0 +1,20 @@
+@use "../../../styles/variables";
+@use 'sass:color';
+
+.Footer {
+  padding: 1rem;
+  background-color: color.mix(
+    $color1: variables.$darkblue,
+    $color2: variables.$blue,
+    $weight: 50%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}

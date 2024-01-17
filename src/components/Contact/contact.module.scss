@@ -1,20 +1,18 @@
+@use "../../styles/mixins";
+
 .Contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  padding: 0 1rem;
+  
+  @media (min-width: 700px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
 
   a {
-    color: #020426;
-    background-color: white;
-    text-decoration: none;
-    padding: 1rem;
-    font-size: 1.25rem;
-    border-radius: 0.5rem;
-    flex-grow: 1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
+    @include mixins.button();
   }
 }

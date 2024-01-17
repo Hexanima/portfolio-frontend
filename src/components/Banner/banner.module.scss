@@ -1,3 +1,5 @@
+@use "../../styles/variables";
+
 .Banner {
   padding: 2rem;
   color: black;
@@ -49,8 +51,8 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      color: white;
-      font-family: "Roboto Mono", monospace;
+      color: variables.$text;
+      font-family: variables.$monoFont;
 
       h1 {
         @media (min-width: 768px) {

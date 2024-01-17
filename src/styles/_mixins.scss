@@ -1,0 +1,25 @@
+@use "variables";
+
+@mixin button($color: variables.$lightcyan) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: $color;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: variables.$text;
+  flex-grow: 1;
+  transition: variables.$transitionSpeed all ease;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: scale-color($color: $color, $lightness: 7.5%);
+  }
+
+  &:active {
+    transform: scale(0.95);
+    background-color: scale-color($color: $color, $lightness: -7.5%);
+  }
+}

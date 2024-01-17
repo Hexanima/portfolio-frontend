@@ -2,7 +2,7 @@ import Container from "../Container";
 import styles from "./language.module.scss";
 
 interface LanguageProps {
-  list: LanguageItem[];
+  list: LanguageInfo[];
 }
 
 function Language({ list }: LanguageProps) {
@@ -18,11 +18,11 @@ function Language({ list }: LanguageProps) {
   );
 }
 
-Language.Item = function ({ item }: { item: LanguageItem }) {
+Language.Item = function ({ item }: { item: LanguageInfo }) {
   return (
     <li>
       <h3>{item.title}</h3>
-      <h4>Grado {item.grade}</h4>
+      <h4>{item.grade}</h4>
       {item.certificate && (
         <a href={item.certificate} target="_blank">
           Certificado

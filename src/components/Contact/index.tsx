@@ -6,18 +6,18 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <Container.Title text="Contacto" />
       <div className={styles.Contact}>
-        <a href="">
+        <a href="https://www.linkedin.com/in/nicolas-filippelli" target="_blank">
           <LinkedInIcon />
           LinkedIn
         </a>
-        <a href="">
+        <a href="https://www.github.com/Hexanima" target="_blank">
           <GitHubIcon />
           GitHub
         </a>
-        <a href="">
+        <a href="https://wa.me/+541159984867" target="_blank">
           <WhatsAppIcon />
           WhatsApp
         </a>

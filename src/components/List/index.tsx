@@ -1,18 +1,20 @@
 import styles from "./list.module.scss";
 import Container from "../Container";
+import PublicIcon from "@mui/icons-material/Public";
 
 interface ListParams {
   title: string;
   items: ListInfo[];
+  id?: string;
 }
 
-function List({ title, items }: ListParams) {
+function List({ title, items, id }: ListParams) {
   return (
-    <Container>
+    <Container id={id}>
       <Container.Title text={title} />
       <ul className={styles.List}>
         {items.map((item) => (
-          <List.Item item={item} key={`${title}.${item.name}`} />
+          <List.Item item={item} key={`${title}.${item.id}`} />
         ))}
       </ul>
     </Container>
@@ -28,9 +30,16 @@ List.Item = function ({ item }: { item: ListInfo }) {
         <p>{item.date}</p>
       </div>
       <div className={styles.Info}>
-        {item.description.map((desc, i) => (
-          <p key={`${desc[0]}.${i}`}>{desc}</p>
-        ))}
+        <div className={styles.Description}>
+          {item.description.map((desc, i) => (
+            <p key={`${desc[0]}.${i}`}>{desc}</p>
+          ))}
+        </div>
+        {item.liveUrl && (
+          <a target="_blank" href={item.liveUrl}>
+            <PublicIcon /> Sitio en linea
+          </a>
+        )}
       </div>
     </li>
   );

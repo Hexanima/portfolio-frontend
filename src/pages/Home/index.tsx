@@ -5,20 +5,35 @@ import Language from "../../components/Language";
 import List from "../../components/List";
 import Projects from "../../components/Projects";
 import useInfo from "../../hooks/useInfo";
+import Splitter from "../../components/Splitter";
 import styles from "./home.module.scss";
 
 function Home() {
-  const { experienceList, languageList } = useInfo();
+  const {
+    experienceList,
+    educationList,
+    languageList,
+    projectList,
+  } = useInfo();
   return (
     <div className={styles.Home}>
       <Banner />
       <div className={styles.HomeElems}>
         <About />
-        <List title="Experiencia laboral" items={experienceList} />
-        <List title="Experiencia academica" items={experienceList} />
-        <List title="Educación" items={experienceList} />
-        <Language list={languageList} />
-        <Projects />
+
+        <List
+          id="experience"
+          title="Experiencia laboral"
+          items={experienceList}
+        />
+
+        <Splitter id="education" custom>
+          <List title="Educación" items={educationList} />
+          <Language list={languageList} />
+        </Splitter>
+
+        <Projects list={projectList} />
+
         <Contact />
       </div>
     </div>

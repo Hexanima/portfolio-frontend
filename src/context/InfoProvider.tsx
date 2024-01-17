@@ -1,49 +1,95 @@
-import { createContext, ReactNode } from "react";
+import { createContext, ReactNode, useState } from "react";
 
 interface InfoContextValues {
   experienceList: ListInfo[];
-  languageList: LanguageItem[];
+  educationList: ListInfo[];
+  languageList: LanguageInfo[];
+  projectList: ProjectInfo[];
 }
 
 export const InfoContext = createContext({} as InfoContextValues);
 
 export function InfoProvider({ children }: { children: ReactNode }) {
-  const experienceList = [
+  const [experienceList, setExperienceList] = useState<ListInfo[]>([
     {
+      id: 1,
+      name: "Desarrollador Freelance",
+      location: "Le Baguette",
+      date: "11/23",
+      description: [
+        "Diseño y desarrollo de sitio web para panificadora en crecimiento.",
+      ],
+      liveUrl: "https://www.lebaguettepanificadora.com.ar",
+    },
+    {
+      id: 2,
       name: "Panadero",
       location: "Le Baguette",
-      date: "22/9/22 - 15/6/23",
+      date: "6/22 - Actualidad",
       description: [
         "Armado de pedidos para despacho a diferentes panaderías y despensas, procesando más de 250kg de pan por día.",
         "Producción de diferentes panificados para venta y despacho, usando más de 300kg de harina al día.",
       ],
     },
-    {
-      name: "Panadero",
-      location: "Le Baguette",
-      date: "22/9/22 - 15/6/23",
-      description: [
-        "Armado de pedidos para despacho a diferentes panaderías y despensas, procesando más de 250kg de pan por día.",
-        "Producción de diferentes panificados para venta y despacho, usando más de 300kg de harina al día.",
-      ],
-    },
-    {
-      name: "Panadero",
-      location: "Le Baguette",
-      date: "22/9/22 - 15/6/23",
-      description: [
-        "Armado de pedidos para despacho a diferentes panaderías y despensas, procesando más de 250kg de pan por día.",
-        "Producción de diferentes panificados para venta y despacho, usando más de 300kg de harina al día.",
-      ],
-    },
-  ];
+  ]);
 
-  const languageList: LanguageItem[] = [
-    { title: "Ingles", grade: "C2", certificate: "http://www.google.com" },
-    { title: "Ingles", grade: "C2", certificate: "http://www.google.com" },
-    { title: "Ingles", grade: "C2", certificate: "http://www.google.com" },
-  ];
-  const contextValues = { experienceList, languageList };
+  const [educationList, setEducationList] = useState<ListInfo[]>([
+    {
+      id: 1,
+      name: "Desarrollador .NET",
+      description: [
+        "Curso autodidacta donde aprendo el lenguaje C# y el framework .NET",
+        "WPF, Databases, Linq, Collections, Game Development con Unity, Unit Testing TDD",
+      ],
+      date: "1/24 - Actualidad",
+      location: "Udemy - Tutorials.eu por Denis Panjuta",
+    },
+    {
+      id: 2,
+      name: "Desarrollador FullStack JS",
+      description: [
+        "Curso en el cual aprendimos desde el diseño hasta el desarrollo de un sitio web, y aplicamos estos conocimientos creando un ecommerce con vistas responsive, sistemas ABM, uso de cookies y creación de APIs.",
+      ],
+      date: "9/22 - 7/23",
+      location: "Digital House",
+    },
+  ]);
+
+  const [languageList, setLanguageList] = useState<LanguageInfo[]>([
+    { id: 1, title: "Español", grade: "Nativo" },
+    {
+      id: 2,
+      title: "Ingles",
+      grade: "Grado C2",
+      certificate: "https://www.efset.org/cert/hDaGDF",
+    },
+  ]);
+
+  const [projectList, setProjectList] = useState<ProjectInfo[]>([
+    {
+      id: 1,
+      img: "img/CloneTheSpire.png",
+      title: "Clone the Spire",
+      info: `Proyecto en donde clono las mecanicas y jugabilidad del videojuego
+  "Slay The Spire" en una aplicacion de consola, a fin de aprender el lenguaje C#`,
+      gitUrl: "https://github.com/Hexanima/clone-the-spire",
+    },
+    {
+      id: 2,
+      img: "img/AnimalPark.png",
+      title: "Animal Park",
+      info:
+        "Proyecto integrador para el curso de Desarrollador Web Full Stack dado por la Fundación Formar junto a Digital House.",
+      gitUrl: "https://github.com/RamonBritez/Grupo_5_Animal_Park",
+    },
+  ]);
+
+  const contextValues = {
+    experienceList,
+    educationList,
+    languageList,
+    projectList,
+  };
 
   return (
     <InfoContext.Provider value={contextValues}>

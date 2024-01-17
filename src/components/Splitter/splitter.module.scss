@@ -1,0 +1,16 @@
+.Splitter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 940px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.Custom {
+    @media (min-width: 940px) {
+      grid-template-columns: 11fr 1fr;
+    }
+  }
+}
+
