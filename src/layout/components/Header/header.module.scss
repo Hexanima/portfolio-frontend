@@ -82,39 +82,48 @@ $tempColor: color.mix(
 }
 
 .Burger {
-  background-color: $tempColor;
-  padding: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: variables.$monoFont;
-  font-size: 1rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
   transition: variables.$transitionSpeed all ease;
   top: 0;
+  width: 100%;
   left: -100%;
   position: absolute;
   z-index: 200;
   height: 100vh;
   position: fixed;
   display: flex;
-  
+
   &.Active {
     left: 0;
   }
 
-  a {
-    color: variables.$text;
-    transition: variables.$transitionSpeed all ease;
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-    cursor: pointer;
+  .Menu {
+    background-color: $tempColor;
+    padding: 2rem;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: variables.$monoFont;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+    a {
+      color: variables.$text;
+      transition: variables.$transitionSpeed all ease;
+      letter-spacing: 0.1rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a:hover {
+      text-shadow: variables.$text 0 0 0.5rem;
+      letter-spacing: 0.25rem;
+    }
   }
 
-  a:hover {
-    text-shadow: variables.$text 0 0 0.5rem;
-    letter-spacing: 0.25rem;
+  .Invisible {
+    flex-grow: 1;
   }
 }

@@ -44,11 +44,14 @@ function Header() {
         onBlur={closeBurgerMenu}
         ref={burgerRef}
       >
-        <a href="#header">Inicio</a>
-        <a href="#experience">Experiencia</a>
-        <a href="#education">Educación</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#contact">Contacto </a>
+        <div className={styles.Menu}>
+          <a href="#header">Inicio</a>
+          <a href="#experience">Experiencia</a>
+          <a href="#education">Educación</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto </a>
+        </div>
+        <div className={styles.Invisible} onClick={closeBurgerMenu}></div>
       </div>
     </>
   );
