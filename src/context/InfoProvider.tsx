@@ -77,11 +77,10 @@ export function InfoProvider({ children }: { children: ReactNode }) {
     setProjectList([
       {
         id: 1,
-        img: "img/CloneTheSpire.png",
-        title: "Clone the Spire",
-        info: `Proyecto en donde clono las mecanicas y jugabilidad del videojuego
-    "Slay The Spire" en una aplicacion de consola, a fin de aprender el lenguaje C#`,
-        gitUrl: "https://github.com/Hexanima/clone-the-spire",
+        img: "img/Adviency.png",
+        title: "Adviency 2023",
+        info: `Desafio de adviento de lista de regalos en el cual dia a dia agregamos funciones nuevas`,
+        gitUrl: "https://github.com/Hexanima/Adviency2023",
       },
       {
         id: 2,

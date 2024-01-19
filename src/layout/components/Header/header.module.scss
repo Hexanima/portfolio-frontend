@@ -96,6 +96,10 @@ $tempColor: color.mix(
     left: 0;
   }
 
+  @media (min-width: 768px) {
+    display: none ; 
+  }
+
   .Menu {
     background-color: $tempColor;
     padding: 2rem;
