@@ -22,19 +22,20 @@ export function InfoProvider({ children }: { children: ReactNode }) {
     setExperienceList([
       {
         id: 1,
-        name: "Desarrollador Freelance",
-        location: "Le Baguette",
-        date: "11/23",
+        name: "Desarrollador Full Stack",
+        location: "ForIt Software Factory",
+        date: "3/24 - Actualidad",
         description: [
-          "Diseño y desarrollo de sitio web para panificadora en crecimiento.",
+          "Desarrollo de un proyecto de e-commerce para un mayorista, centrando en la gestión compleja de categorías, subcategorías, productos y variantes. ",
+          "El sistema ofrece funciones clave como gestión de productos, inventario, búsqueda y carrito de compras, con un panel de administración intuitivo para una gestión eficiente.",
+          "Tecnologías aplicadas: TypeScript, Node.js, React.js, SQL, TDD, Clean Architecture, Docker.",
         ],
-        liveUrl: "https://www.lebaguettepanificadora.com.ar",
       },
       {
         id: 2,
         name: "Panadero",
         location: "Le Baguette",
-        date: "6/22 - Actualidad",
+        date: "6/22 - 2/24",
         description: [
           "Armado de pedidos para despacho a diferentes panaderías y despensas, procesando más de 250kg de pan por día.",
           "Producción de diferentes panificados para venta y despacho, usando más de 300kg de harina al día.",
@@ -45,17 +46,18 @@ export function InfoProvider({ children }: { children: ReactNode }) {
     setEducationList([
       {
         id: 1,
-        name: "Desarrollador .NET",
+        name: "Desarrollador Full Stack",
         description: [
-          "Curso autodidacta donde aprendo el lenguaje C# y el framework .NET",
-          "WPF, Databases, Linq, Collections, Game Development con Unity, Unit Testing TDD",
+          "Incubadora de talento para programadores.",
+          "Programa de entrenamiento laboral de 6 meses.",
+          "Durante el período, recibí formación especializada en habilidades técnicas y blandas.",
         ],
-        date: "1/24 - Actualidad",
-        location: "Udemy - Tutorials.eu por Denis Panjuta",
+        date: "3/24 - Actualidad",
+        location: "ForIt Software Factory",
       },
       {
         id: 2,
-        name: "Desarrollador FullStack JS",
+        name: "Desarrollador Full Stack",
         description: [
           "Curso en el cual aprendimos desde el diseño hasta el desarrollo de un sitio web, y aplicamos estos conocimientos creando un ecommerce con vistas responsive, sistemas ABM, uso de cookies y creación de APIs.",
         ],
