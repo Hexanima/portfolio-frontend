@@ -22,6 +22,16 @@ export function InfoProvider({ children }: { children: ReactNode }) {
     setExperienceList([
       {
         id: 1,
+        name: "Desarrollador Frontend",
+        location: "ForIt Software Factory",
+        date: "7/24 - Actualidad",
+        description: [
+          "Desarrollo de dos aplicaciones móviles para el Banco de Alimentos en conjunto con Finnegans",
+          "Tecnologías aplicadas: TypeScript, React.js, Storybook, Capacitor, Clean Architecture."
+        ],
+      },
+      {
+        id: 2,
         name: "Desarrollador Full Stack",
         location: "ForIt Software Factory",
         date: "3/24 - Actualidad",
@@ -32,7 +42,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
         ],
       },
       {
-        id: 2,
+        id: 3,
         name: "Panadero",
         location: "Le Baguette",
         date: "6/22 - 2/24",
