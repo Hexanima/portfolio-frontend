@@ -3,10 +3,11 @@ import styles from "./about.module.scss";
 
 function About() {
   return (
-    <About.Parraph>
-      Una persona curiosa, apasionada por el mundo IT, aspirando a desarrollar
-      videojuegos.
-    </About.Parraph>
+    <>
+      <About.Parraph>
+        Una persona curiosa y apasionada por el desarrollo, aspirando a crear grandes juegos y sistemas.
+      </About.Parraph>
+    </>
   );
 }
 

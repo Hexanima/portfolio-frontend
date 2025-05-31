@@ -22,16 +22,28 @@ export function InfoProvider({ children }: { children: ReactNode }) {
     setExperienceList([
       {
         id: 1,
-        name: "Desarrollador Frontend",
+        name: "Desarrollador Full Stack",
         location: "ForIt Software Factory",
-        date: "7/24 - Actualidad",
+        date: "10/2024 - Actualidad",
         description: [
-          "Desarrollo de dos aplicaciones móviles para el Banco de Alimentos en conjunto con Finnegans",
-          "Tecnologías aplicadas: TypeScript, React.js, Storybook, Capacitor, Clean Architecture."
+          "Desarrollo de plataforma integral de servicio de empleo (recruiting) multi-tenant para AMIA.",
+          "Tecnologías Aplicadas: TypeScript, Vitest, NodeJs, PostgreSQL, ReactJs, TailwindCss y Storybook.",
+          "Prácticas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional."
         ],
       },
       {
         id: 2,
+        name: "Desarrollador Frontend",
+        location: "ForIt Software Factory",
+        date: "7/24 - 01/2025",
+        description: [
+          "Desarrollo de dos aplicaciones móviles para el Banco de Alimentos en conjunto con Finnegans",
+          "Tecnologías aplicadas: TypeScript, React.js, Storybook, Capacitor, Clean Architecture.",
+          "Prácticas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional."
+        ],
+      },
+      {
+        id: 3,
         name: "Desarrollador Full Stack",
         location: "ForIt Software Factory",
         date: "3/24 - Actualidad",
@@ -39,16 +51,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
           "Desarrollo de un proyecto de e-commerce para un mayorista, centrando en la gestión compleja de categorías, subcategorías, productos y variantes. ",
           "El sistema ofrece funciones clave como gestión de productos, inventario, búsqueda y carrito de compras, con un panel de administración intuitivo para una gestión eficiente.",
           "Tecnologías aplicadas: TypeScript, Node.js, React.js, SQL, TDD, Clean Architecture, Docker.",
-        ],
-      },
-      {
-        id: 3,
-        name: "Panadero",
-        location: "Le Baguette",
-        date: "6/22 - 2/24",
-        description: [
-          "Armado de pedidos para despacho a diferentes panaderías y despensas, procesando más de 250kg de pan por día.",
-          "Producción de diferentes panificados para venta y despacho, usando más de 300kg de harina al día.",
+          "Practicas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional."
         ],
       },
     ]);
@@ -91,7 +94,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
         id: 1,
         img: "img/Adviency.png",
         title: "Adviency 2023",
-        info: `Desafio de adviento de lista de regalos en el cual dia a dia agregamos funciones nuevas`,
+        info: `Desafío de adviento de lista de regalos en el cual dia a dia agregamos funciones nuevas`,
         gitUrl: "https://github.com/Hexanima/Adviency2023",
       },
       {
@@ -101,6 +104,22 @@ export function InfoProvider({ children }: { children: ReactNode }) {
         info:
           "Proyecto integrador para el curso de Desarrollador Web Full Stack dado por la Fundación Formar junto a Digital House.",
         gitUrl: "https://github.com/RamonBritez/Grupo_5_Animal_Park",
+      },
+      {
+        id: 3,
+        img: "img/godotAsteroids.webp",
+        title: "Godot Asteroids",
+        info:
+          "El clásico juego \"Asteroids\", hecho y re-imaginado en el motor de videojuegos Godot 4.",
+        gitUrl: "https://github.com/Hexanima/GodotAsteroids",
+      },
+      {
+        id: 4,
+        img: "img/AnimalPark.png",
+        title: "Animal Park - Reimagined",
+        info:
+          "Vuelta al desarrollo del proyecto integrador para el curso de Digital House, recreado con C# usando ASP.NET.",
+        gitUrl: "https://github.com/Hexanima/AnimalParkReimagined",
       },
     ]);
   }, []);
