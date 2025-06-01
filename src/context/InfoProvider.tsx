@@ -99,7 +99,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
       },
       {
         id: 2,
-        img: "img/AnimalPark.webp",
+        img: "img/animalPark.webp",
         title: "Animal Park",
         info:
           "Proyecto integrador para el curso de Desarrollador Web Full Stack dado por la Fundación Formar junto a Digital House.",
