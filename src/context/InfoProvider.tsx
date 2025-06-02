@@ -115,7 +115,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
       },
       {
         id: 4,
-        img: "img/AnimalParkImg.webp",
+        img: "img/animalParkImg.webp",
         title: "Animal Park - Reimagined",
         info:
           "Vuelta al desarrollo del proyecto integrador para el curso de Digital House, recreado con C# usando ASP.NET.",
