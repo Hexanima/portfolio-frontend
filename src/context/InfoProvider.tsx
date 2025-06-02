@@ -92,14 +92,14 @@ export function InfoProvider({ children }: { children: ReactNode }) {
     setProjectList([
       {
         id: 1,
-        img: "img/Adviency.png",
+        img: "img/Adviency.webp",
         title: "Adviency 2023",
         info: `Desafío de adviento de lista de regalos en el cual dia a dia agregamos funciones nuevas`,
         gitUrl: "https://github.com/Hexanima/Adviency2023",
       },
       {
         id: 2,
-        img: "img/animalPark.webp",
+        img: "img/animalParkGif.webp",
         title: "Animal Park",
         info:
           "Proyecto integrador para el curso de Desarrollador Web Full Stack dado por la Fundación Formar junto a Digital House.",
@@ -115,7 +115,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
       },
       {
         id: 4,
-        img: "img/AnimalPark.png",
+        img: "img/AnimalParkImg.webp",
         title: "Animal Park - Reimagined",
         info:
           "Vuelta al desarrollo del proyecto integrador para el curso de Digital House, recreado con C# usando ASP.NET.",
