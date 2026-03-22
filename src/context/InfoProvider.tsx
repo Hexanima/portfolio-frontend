@@ -23,35 +23,57 @@ export function InfoProvider({ children }: { children: ReactNode }) {
       {
         id: 1,
         name: "Desarrollador Full Stack",
-        location: "ForIt Software Factory",
-        date: "10/2024 - Actualidad",
+        location: "Nomu Labs",
+        date: "10/2025 - Actualidad",
         description: [
-          "Desarrollo de plataforma integral de servicio de empleo (recruiting) multi-tenant para AMIA.",
-          "Tecnologías Aplicadas: TypeScript, Vitest, NodeJs, PostgreSQL, ReactJs, TailwindCss y Storybook.",
-          "Prácticas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional."
+          "Desarrollo, gestión, y deploy de diversos proyectos.",
+          "Tecnologías Aplicadas: Docker, AWS (S3, EC2, Lambda, Cloudfront), TypeScript, NodeJs, MongoDB, ReactJs, WordPress.",
         ],
       },
       {
         id: 2,
-        name: "Desarrollador Frontend",
+        name: "Desarrollador Full Stack Líder",
         location: "ForIt Software Factory",
-        date: "7/24 - 01/2025",
+        date: "06/2025 - 09/2025",
         description: [
-          "Desarrollo de dos aplicaciones móviles para el Banco de Alimentos en conjunto con Finnegans",
-          "Tecnologías aplicadas: TypeScript, React.js, Storybook, Capacitor, Clean Architecture.",
-          "Prácticas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional."
+          "Liderazgo del desarrollo de aplicación de fidelidad donde distintos bares gestionan y premian a sus clientes.",
+          "Encargado de deploys en AWS utilizando EC2 y Docker.",
+          "Tecnologías Aplicadas: TypeScript, Vitest, NodeJs, PostgreSQL, AWS S3, ReactJs, TailwindCss y Storybook.",
+          "Prácticas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional.",
         ],
       },
       {
         id: 3,
         name: "Desarrollador Full Stack",
         location: "ForIt Software Factory",
-        date: "3/24 - Actualidad",
+        date: "10/2024 - 10/2025",
+        description: [
+          "Desarrollo de plataforma integral de servicio de empleo (recruiting) multi-tenant para AMIA.",
+          "Tecnologías Aplicadas: TypeScript, Vitest, NodeJs, PostgreSQL, ReactJs, TailwindCss y Storybook.",
+          "Prácticas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional.",
+        ],
+      },
+      {
+        id: 4,
+        name: "Desarrollador Frontend",
+        location: "ForIt Software Factory",
+        date: "07/2024 - 01/2025",
+        description: [
+          "Desarrollo de dos aplicaciones móviles para el Banco de Alimentos en conjunto con Finnegans",
+          "Tecnologías aplicadas: TypeScript, React.js, Storybook, Capacitor, Clean Architecture.",
+          "Prácticas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional.",
+        ],
+      },
+      {
+        id: 5,
+        name: "Desarrollador Full Stack",
+        location: "ForIt Software Factory",
+        date: "03/2024 - 08/2024",
         description: [
           "Desarrollo de un proyecto de e-commerce para un mayorista, centrando en la gestión compleja de categorías, subcategorías, productos y variantes. ",
           "El sistema ofrece funciones clave como gestión de productos, inventario, búsqueda y carrito de compras, con un panel de administración intuitivo para una gestión eficiente.",
           "Tecnologías aplicadas: TypeScript, Node.js, React.js, SQL, TDD, Clean Architecture, Docker.",
-          "Practicas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional."
+          "Practicas: Test Driven Development, Arquitectura Limpia, Código Limpio, Programación Funcional.",
         ],
       },
     ]);
@@ -65,7 +87,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
           "Programa de entrenamiento laboral de 6 meses.",
           "Durante el período, recibí formación especializada en habilidades técnicas y blandas.",
         ],
-        date: "3/24 - Actualidad",
+        date: "03/2024 - 10/2025",
         location: "ForIt Software Factory",
       },
       {
@@ -74,7 +96,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
         description: [
           "Curso en el cual aprendimos desde el diseño hasta el desarrollo de un sitio web, y aplicamos estos conocimientos creando un ecommerce con vistas responsive, sistemas ABM, uso de cookies y creación de APIs.",
         ],
-        date: "9/22 - 7/23",
+        date: "09/2022 - 07/2023",
         location: "Digital House",
       },
     ]);
@@ -101,24 +123,21 @@ export function InfoProvider({ children }: { children: ReactNode }) {
         id: 2,
         img: "img/animalParkGif.webp",
         title: "Animal Park",
-        info:
-          "Proyecto integrador para el curso de Desarrollador Web Full Stack dado por la Fundación Formar junto a Digital House.",
+        info: "Proyecto integrador para el curso de Desarrollador Web Full Stack dado por la Fundación Formar junto a Digital House.",
         gitUrl: "https://github.com/RamonBritez/Grupo_5_Animal_Park",
       },
       {
         id: 3,
         img: "img/godotAsteroids.webp",
         title: "Godot Asteroids",
-        info:
-          "El clásico juego \"Asteroids\", hecho y re-imaginado en el motor de videojuegos Godot 4.",
+        info: 'El clásico juego "Asteroids", hecho y re-imaginado en el motor de videojuegos Godot 4.',
         gitUrl: "https://github.com/Hexanima/GodotAsteroids",
       },
       {
         id: 4,
         img: "img/animalParkImg.webp",
         title: "Animal Park - Reimagined",
-        info:
-          "Vuelta al desarrollo del proyecto integrador para el curso de Digital House, recreado con C# usando ASP.NET.",
+        info: "Vuelta al desarrollo del proyecto integrador para el curso de Digital House, recreado con C# usando ASP.NET.",
         gitUrl: "https://github.com/Hexanima/AnimalParkReimagined",
       },
     ]);
