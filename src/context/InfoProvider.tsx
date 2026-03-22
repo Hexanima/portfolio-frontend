@@ -34,7 +34,7 @@ export function InfoProvider({ children }: { children: ReactNode }) {
         id: 2,
         name: "Desarrollador Full Stack Líder",
         location: "ForIt Software Factory",
-        date: "06/2025 - 09/2025",
+        date: "06/2025 - 11/2025",
         description: [
           "Liderazgo del desarrollo de aplicación de fidelidad donde distintos bares gestionan y premian a sus clientes.",
           "Encargado de deploys en AWS utilizando EC2 y Docker.",
